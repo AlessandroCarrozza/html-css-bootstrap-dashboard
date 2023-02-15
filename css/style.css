@@ -1,18 +1,22 @@
 
 /* ----- utility ----- */
 
+li{
+    list-style-type: none;
+}
 
+:root{
+    --lightgrey: lightgrey;
+}
 
 
 
 
 /* ----- codice ----- */
 
-/* macroaree */
-
+/* inizio macroaree */
 header{
     height: 80px;
-    /* debug */ background-color: red;
 }
 
 main{
@@ -20,17 +24,19 @@ main{
     /* debug */ background-color: green;
 }
 
-.sidebar{
+.ms_sidebar{
     height: 100%;
     width: 80px;
     /* debug */ background-color: blue;
 }
 
-.content{
+.ms_content{
     height: 100%;
     width: calc(100% - 80px);
     /* debug */ background-color: orange;
 }
+/* fine macroaree */
+
 
 
 
@@ -43,16 +49,19 @@ main{
 
 
 @media screen and (min-width: 768px) {
-
-}
+    /* .ms_nav-bar{
+        min-width: 80%;
+    }
+    */
+} 
 
 
 @media screen and (min-width: 992px) {
-    .sidebar{
+    .ms_sidebar{
         width: 150px;
     }
 
-    .content{
+    .ms_content{
         width: calc(100% - 150px);
     }
-}
+} 

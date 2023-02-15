@@ -17,7 +17,6 @@ li{
 /* inizio macroaree */
 header{
     height: 80px;
-    /* debug */ background-color: red;
 }
 
 main{
@@ -45,12 +44,26 @@ main{
 }
 /* fine macroaree */
 
+
 table{
    /* debug */ border: 2px solid black; 
 }
 
+.ms_logo-mobile{
+    height: 60px;
+}
 
+.ms_logo-normal{
+    height: 40px;
+}
 
+.ms_navbar{
+    width: 85%;
+}
+
+.ms_list-icons{
+    width: 15%;
+}
 
 
 
@@ -62,10 +75,13 @@ table{
 
 
 @media screen and (min-width: 768px) {
-    /* .ms_nav-bar{
-        min-width: 80%;
+    .ms_navbar{
+        width: 90%;
     }
-    */
+    
+    .ms_list-icons{
+        width: 10%;
+    }
 } 
 
 
@@ -77,4 +93,33 @@ table{
     .ms_content{
         width: calc(100% - 150px);
     }
+
+    .ms_navbar{
+        width: 75%;
+    }
+    
+    .ms_list-icons{
+        width: 25%;
+    }
+
 } 
+
+@media screen and (min-width: 1200px) {
+    .ms_navbar{
+        width: 80%;
+    }
+    
+    .ms_list-icons{
+        width: 20%;
+    }
+} 
+
+@media screen and (min-width: 1600px) {
+    .ms_navbar{
+        width: 85%;
+    }
+    
+    .ms_list-icons{
+        width: 15%;
+    }
+}

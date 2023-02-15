@@ -1,0 +1,33 @@
+
+/* ----- utility ----- */
+
+
+
+
+
+
+/* ----- codice ----- */
+
+/* macroaree */
+
+header{
+    height: 100px;
+    /* debug */ background-color: red;
+}
+
+main{
+    height: calc(100vh - 100px);
+    /* debug */ background-color: green;
+}
+
+.sidebar{
+    height: 100%;
+    width: 100px;
+    /* debug */ background-color: blue;
+}
+
+.content{
+    height: 100%;
+    width: calc(100% - 100px);
+    /* debug */ background-color: orange;
+}

@@ -21,14 +21,16 @@
             </a>
 
             <div class="d-flex align-items-center w-100 justify-content-between">
+
                 <div class="ms_navbar">
                     <input type="text" class="mx-4 w-100">
                 </div>
-                <ul class="ms_list-icons d-flex m-0">
-                    <li>testo</li>
+
+                <ul class="ms_list-icons d-flex mb-0 justify-content-between">
                     <li class="d-none d-lg-inline-block">testo</li>
                     <li class="d-none d-lg-inline-block">testo</li>
                     <li class="d-none d-lg-inline-block">testo</li>
+                    <li class="ms_bell">bell</li>
                 </ul>
             </div>
         </nav>
@@ -41,27 +43,33 @@
 
         <aside class="ms_sidebar d-flex flex-column justify-content-between py-3">
 
-            <div class="aside-top">
+            <section id="aside-top">
                 <ul class="p-0">
                     <li class="text-center py-2">
-                        <a href="#">testo <span class="d-none d-lg-inline-block">testo2</span></a>
+                        <a href="#">
+                          <i class="fa-solid fa-house text-white"></i> <span class="ms_text-sidebar d-none d-lg-inline-block text-white">Home</span>
+                        </a>
                     </li>
                     <li class="text-center py-2">
-                        <a href="#">testo <span class="d-none d-lg-inline-block">testo2</span></a>
+                        <a href="#">
+                          <i class="fa-solid fa-chart-simple text-white"></i> <span class="ms_text-sidebar d-none d-lg-inline-block text-white">Stats</span>
+                        </a>
                     </li>
                     <li class="text-center py-2">
-                        <a href="#">testo <span class="d-none d-lg-inline-block">testo2</span></a>
+                        <a href="#">
+                          <i class="fa-solid fa-chart-line text-white"></i> <span class="ms_text-sidebar d-none d-lg-inline-block text-white">Signals</span>
+                        </a>
                     </li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="aside-bottom py-2">
+            <section id="aside-bottom" class="py-2">
                 <ul class="p-0">
                     <li class="text-center">
-                        <a href="#">testo <span class="d-none d-lg-inline-block">testo2</span></a>
+                        <a href="#"><i class="fa-solid fa-gear text-white"></i> <span class="ms_text-sidebar d-none d-lg-inline-block text-white">Admin</span></a>
                     </li>
                 </ul>
-            </div>
+            </section>
 
         </aside>
 
@@ -71,10 +79,10 @@
         <div class="ms_content">
 
             <section id="ms_cta" class="container-fluid">
-                <div class="row">
-                    <div class="col-12 col-md-4">testo</div>
-                    <div class="col-12 col-md-4">testo</div>
-                    <div class="col-12 col-md-4">testo</div>
+                <div class="ms_cta-side d-flex">
+                    <div>testo</div>
+                    <div>testo</div>
+                    <div>Studenti online negli ultimi 30 minuti <br> <span class="d-block">125</span></div>
                 </div>
             </section>
 
@@ -83,162 +91,189 @@
                     <div class="col-12 col-md-12 col-lg-8">
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <table class="table">
-                                    <thead>
-                                      <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
+                              <div class="card w-100 my-3" style="width: 18rem;">
+                                <div class="card-header">
+                                  Featured
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">
+                                    <table class="table">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">#</th>
+                                          <th scope="col">First</th>
+                                          <th scope="col">Last</th>
+                                          <th scope="col">Handle</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">1</th>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                          <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">2</th>
+                                          <td>Jacob</td>
+                                          <td>Thornton</td>
+                                          <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td colspan="2">Larry the Bird</td>
+                                          <td>@twitter</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table class="table">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">#</th>
+                                          <th scope="col">First</th>
+                                          <th scope="col">Last</th>
+                                          <th scope="col">Handle</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">1</th>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                          <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">2</th>
+                                          <td>Jacob</td>
+                                          <td>Thornton</td>
+                                          <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td colspan="2">Larry the Bird</td>
+                                          <td>@twitter</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table class="table">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">#</th>
+                                          <th scope="col">First</th>
+                                          <th scope="col">Last</th>
+                                          <th scope="col">Handle</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">1</th>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                          <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">2</th>
+                                          <td>Jacob</td>
+                                          <td>Thornton</td>
+                                          <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td colspan="2">Larry the Bird</td>
+                                          <td>@twitter</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </li>
+                                </ul>
+                              </div>
                             </div>
+
+                            
                             <div class="col-12 col-md-12">
-                                <table class="table">
-                                    <thead>
-                                      <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                  <table class="table">
-                                    <thead>
-                                      <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
+                              <div class="card w-100" style="width: 18rem;">
+                                <div class="card-header">
+                                  Featured
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">
+                                    <div class="accordion" id="accordionExample">
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Accordion Item #1
+                                          </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Accordion Item #2
+                                          </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Accordion Item #3
+                                          </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-12 col-lg-4">
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <table class="table">
-                                    <thead>
-                                      <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                  
+
+                              <div class="card w-100 my-3" style="width: 18rem;">
+                                <div class="card-header">
+                                  Featured
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">An item</li>
+                                  <li class="list-group-item">A second item</li>
+                                  <li class="list-group-item">A third item</li>
+                                </ul>
+                              </div>                                
                             </div>
+
                             <div class="col-12 col-md-12">
-                                <table class="table">
-                                    <thead>
-                                      <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
+                              <div class="card w-100" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">An item</li>
+                                  <li class="list-group-item">A second item</li>
+                                  <li class="list-group-item">A third item</li>
+                                </ul>
+                                <div class="card-body">
+                                  <a href="#" class="card-link">Card link</a>
+                                  <a href="#" class="card-link">Another link</a>
+                                </div>
+                              </div>
                             </div>
                         </div>
                     </div>

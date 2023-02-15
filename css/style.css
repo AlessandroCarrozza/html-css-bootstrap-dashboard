@@ -5,6 +5,10 @@ li{
     list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 :root{
     --lightgrey: lightgrey;
 }
@@ -26,7 +30,9 @@ main{
 .ms_sidebar{
     height: 100%;
     width: 80px;
-    /* debug */ background-color: blue;
+    background-color: blue;
+    background-image: url("../img/sidebar-bg.png");
+    background-size: cover;
 }
 
 .ms_content{
@@ -62,26 +68,30 @@ table{
 }
 
 .ms_list-icons{
-    width: 15%;
+    width: 12%;
+}
+
+aside i{
+    font-size: 22px;
+}
+
+.ms_cta-side{
+    flex-direction: column;
 }
 
 
 
 /* ----- area responsive ----- */
 
-@media screen and (min-width: 576px) {
-
+@media screen and (min-width: 576px) and (max-width: 992) {
+    .ms_list-icons{
+        text-align: right;
+    }
 }
 
 
 @media screen and (min-width: 768px) {
-    .ms_navbar{
-        width: 90%;
-    }
     
-    .ms_list-icons{
-        width: 10%;
-    }
 } 
 
 
@@ -95,31 +105,24 @@ table{
     }
 
     .ms_navbar{
-        width: 75%;
+        min-width: calc(100% - 200px);
     }
     
     .ms_list-icons{
-        width: 25%;
+        width: 200px;
+    }
+
+    aside a{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        padding: 0 1.5rem;
+    }
+
+    .ms_cta-side{
+        flex-direction: row;
+        justify-content: space-between;
     }
 
 } 
-
-@media screen and (min-width: 1200px) {
-    .ms_navbar{
-        width: 80%;
-    }
-    
-    .ms_list-icons{
-        width: 20%;
-    }
-} 
-
-@media screen and (min-width: 1600px) {
-    .ms_navbar{
-        width: 85%;
-    }
-    
-    .ms_list-icons{
-        width: 15%;
-    }
-}

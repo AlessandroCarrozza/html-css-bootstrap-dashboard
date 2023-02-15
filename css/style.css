@@ -17,11 +17,11 @@ li{
 /* inizio macroaree */
 header{
     height: 80px;
+    /* debug */ background-color: red;
 }
 
 main{
     height: calc(100vh - 80px);
-    /* debug */ background-color: green;
 }
 
 .ms_sidebar{
@@ -33,13 +33,22 @@ main{
 .ms_content{
     height: 100%;
     width: calc(100% - 80px);
-    /* debug */ background-color: orange;
+    overflow-y: scroll;
 }
 
-.ms_cta{
+#ms_cta{
     /* debug */ background-color: aqua;
 }
+
+#ms_main-content{
+    /* debug */ background-color: gold;
+}
 /* fine macroaree */
+
+table{
+   /* debug */ border: 2px solid black; 
+}
+
 
 
 

@@ -35,6 +35,10 @@ main{
     width: calc(100% - 80px);
     /* debug */ background-color: orange;
 }
+
+.ms_cta{
+    /* debug */ background-color: aqua;
+}
 /* fine macroaree */
 
 

@@ -128,7 +128,9 @@
                           <span>Nuovo Studente</span>
 
                           <div class="ms_plus d-inline-block px-2">
-                              <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus text-white"></i></button>
+                              <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
 
                               <div class="offcanvas offcanvas-end text-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                 <div class="offcanvas-header">
@@ -184,7 +186,7 @@
                     </div>
 
 
-                    <div class="text-white py-3">
+                    <div class="ms_plans text-white py-3">
                         <div>
                           <h3 class="d-inline-block">Boolean</h3>
                           <div class="ms_piano d-inline-block">Piano blaze</div>
@@ -203,7 +205,9 @@
 
 
 
-                    <div class="ms_students text-white py-3">Studenti online negli ultimi 30 minuti <span class="d-block fs-4">125</span></div>
+                    <div class="ms_students text-white py-3">Studenti online negli ultimi 30 minuti 
+                      <span class="d-block fs-4">125</span>
+                    </div>
                 </div>
             </section>
             <!-- fine call to action -->
@@ -223,13 +227,13 @@
                                   <li class="list-group-item">
 
                                     <table class="ms_table-class table">
-                                      <thead>
+                                      <thead">
                                         <tr>
                                           <th scope="col">Nome</th>
-                                          <th scope="col">Data inizio</th>
-                                          <th scope="col">ROI</th>
-                                          <th scope="col">Stato</th>
-                                          <th scope="col">Azioni</th>
+                                          <th scope="col" class="text-center ms_d-none">Data inizio</th>
+                                          <th scope="col" class="text-center ms_d-none">ROI</th>
+                                          <th scope="col" class="text-center">Stato</th>
+                                          <th scope="col" class="text-center">Azioni</th>
                                         </tr>
                                       </thead>
                                       <tbody>
@@ -238,80 +242,120 @@
                                             <img src="img/class-avatar.jpg" class="ms_red-circle pe-2" alt="Red Circle">
                                             Classe 87
                                           </td>
-                                          <td>15 Feb 2023</td>
-                                          <td>20%</td>
-                                          <td><span class="badge rounded-pill bg-success pb-2">Done</span></td>
-                                          <td>testo</td>
+                                          <td class="text-center ms_d-none">15 Feb 2023</td>
+                                          <td class="text-center ms_d-none">20%</td>
+                                          <td class="text-center"><span class="badge rounded-pill bg-success pb-2">Done</span></td>
+                                          <td class="text-center">
+                                            <div class="d-inline-block">
+                                              <button class="btn ms_table-btn" type="button"><i class="fa-solid fa-pen"></i></button>
+                                              <button class="btn ms_table-btn" type="button"><i class="fa-solid fa-trash"></i></button>
+                                            </div>
+                                          </td>
                                         </tr>
                                         <tr>
                                           <td>
                                             <img src="img/class-avatar.jpg" class="ms_red-circle pe-2" alt="Red Circle">
                                             Classe 87
                                           </td>
-                                          <td>15 Feb 2023</td>
-                                          <td>20%</td>
-                                          <td><span class="badge rounded-pill bg-success pb-2">Done</span></td>
-                                          <td>testo</td>
+                                          <td class="text-center ms_d-none">15 Feb 2023</td>
+                                          <td class="text-center ms_d-none">20%</td>
+                                          <td class="text-center"><span class="badge rounded-pill bg-success pb-2">Done</span></td>
+                                          <td class="text-center">
+                                            <div class="d-inline-block">
+                                              <button class="btn ms_table-btn" type="button"><i class="fa-solid fa-pen"></i></button>
+                                              <button class="btn ms_table-btn" type="button"><i class="fa-solid fa-trash"></i></button>
+                                            </div>
+                                          </td>
                                         </tr>
                                         <tr>
                                           <td>
                                             <img src="img/class-avatar.jpg" class="ms_red-circle pe-2" alt="Red Circle">
                                             Classe 87
                                           </td>
-                                          <td>15 Feb 2023</td>
-                                          <td>20%</td>
-                                          <td><span class="badge rounded-pill bg-warning pb-2">process</span></td>
-                                          <td>testo</td>
+                                          <td class="text-center ms_d-none">15 Feb 2023</td>
+                                          <td class="text-center ms_d-none">20%</td>
+                                          <td class="text-center"><span class="badge rounded-pill bg-warning pb-2">process</span></td>
+                                          <td class="text-center">
+                                            <div class="d-inline-block">
+                                              <button class="btn ms_table-btn" type="button"><i class="fa-solid fa-pen"></i></button>
+                                              <button class="btn ms_table-btn" type="button"><i class="fa-solid fa-trash"></i></button>
+                                            </div>
+                                          </td>
                                         </tr>
                                         <tr>
                                           <td>
                                             <img src="img/class-avatar.jpg" class="ms_red-circle pe-2" alt="Red Circle">
                                             Classe 87
                                           </td>
-                                          <td>15 Feb 2023</td>
-                                          <td>20%</td>
-                                          <td><span class="badge rounded-pill bg-success pb-2">Done</span></td>
-                                          <td>testo</td>
+                                          <td class="text-center ms_d-none">15 Feb 2023</td>
+                                          <td class="text-center ms_d-none">20%</td>
+                                          <td class="text-center"><span class="badge rounded-pill bg-success pb-2">Done</span></td>
+                                          <td class="text-center">
+                                            <div class="d-inline-block">
+                                              <button class="btn ms_table-btn" type="button"><i class="fa-solid fa-pen"></i></button>
+                                              <button class="btn ms_table-btn" type="button"><i class="fa-solid fa-trash"></i></button>
+                                            </div>
+                                          </td>
                                         </tr>
                                         <tr>
                                           <td>
                                             <img src="img/class-avatar.jpg" class="ms_red-circle pe-2" alt="Red Circle">
                                             Classe 87
                                           </td>
-                                          <td>15 Feb 2023</td>
-                                          <td>20%</td>
-                                          <td><span class="badge rounded-pill bg-danger pb-2">failed</span></td>
-                                          <td>testo</td>
+                                          <td class="text-center ms_d-none">15 Feb 2023</td>
+                                          <td class="text-center ms_d-none">20%</td>
+                                          <td class="text-center"><span class="badge rounded-pill bg-danger pb-2">failed</span></td>
+                                          <td class="text-center">
+                                            <div class="d-inline-block">
+                                              <button class="btn ms_table-btn" type="button"><i class="fa-solid fa-pen"></i></button>
+                                              <button class="btn ms_table-btn" type="button"><i class="fa-solid fa-trash"></i></button>
+                                            </div>
+                                          </td>
                                         </tr>
                                         <tr>
                                           <td>
                                             <img src="img/class-avatar.jpg" class="ms_red-circle pe-2" alt="Red Circle">
                                             Classe 87
                                           </td>
-                                          <td>15 Feb 2023</td>
-                                          <td>20%</td>
-                                          <td><span class="badge rounded-pill bg-success pb-2">Done</span></td>
-                                          <td>testo</td>
+                                          <td class="text-center ms_d-none">15 Feb 2023</td>
+                                          <td class="text-center ms_d-none">20%</td>
+                                          <td class="text-center"><span class="badge rounded-pill bg-success pb-2">Done</span></td>
+                                          <td class="text-center">
+                                            <div class="d-inline-block">
+                                              <button class="btn ms_table-btn" type="button"><i class="fa-solid fa-pen"></i></button>
+                                              <button class="btn ms_table-btn" type="button"><i class="fa-solid fa-trash"></i></button>
+                                            </div>
+                                          </td>
                                         </tr>
                                         <tr>
                                           <td>
                                             <img src="img/class-avatar.jpg" class="ms_red-circle pe-2" alt="Red Circle">
                                             Classe 87
                                           </td>
-                                          <td>15 Feb 2023</td>
-                                          <td>20%</td>
-                                          <td><span class="badge rounded-pill bg-danger pb-2">failed</span></td>
-                                          <td>testo</td>
+                                          <td class="text-center ms_d-none">15 Feb 2023</td>
+                                          <td class="text-center ms_d-none">20%</td>
+                                          <td class="text-center"><span class="badge rounded-pill bg-danger pb-2">failed</span></td>
+                                          <td class="text-center">
+                                            <div class="d-inline-block">
+                                              <button class="btn ms_table-btn" type="button"><i class="fa-solid fa-pen"></i></button>
+                                              <button class="btn ms_table-btn" type="button"><i class="fa-solid fa-trash"></i></button>
+                                            </div>
+                                          </td>
                                         </tr>
                                         <tr>
                                           <td>
                                             <img src="img/class-avatar.jpg" class="ms_red-circle pe-2" alt="Red Circle">
                                             Classe 87
                                           </td>
-                                          <td>15 Feb 2023</td>
-                                          <td>20%</td>
-                                          <td><span class="badge rounded-pill bg-success pb-2">Done</span></td>
-                                          <td>testo</td>
+                                          <td class="text-center ms_d-none">15 Feb 2023</td>
+                                          <td class="text-center ms_d-none">20%</td>
+                                          <td class="text-center"><span class="badge rounded-pill bg-success pb-2">Done</span></td>
+                                          <td class="text-center">
+                                            <div class="d-inline-block">
+                                              <button class="btn ms_table-btn" type="button"><i class="fa-solid fa-pen"></i></button>
+                                              <button class="btn ms_table-btn" type="button"><i class="fa-solid fa-trash"></i></button>
+                                            </div>
+                                          </td>
                                         </tr>
                                       </tbody>
            

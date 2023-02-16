@@ -11,6 +11,7 @@ a{
 
 :root{
     --lightgrey: #e9ecef;
+    --darkgrey: grey;
     --aside-bg-color: #051e34;
     --cta-bg-color: #1b72e8;
 }
@@ -108,6 +109,18 @@ aside li:hover{
     border: 1px solid white;
 }
 
+.ms_plus button:hover{
+    background-color: white;
+}
+
+.ms_plus button i{
+    color: white;
+}
+
+.ms_plus button:hover i{
+    color: black;
+}
+
 .ms_faq{
     border: 1px solid var(--lightgrey);
 }
@@ -117,11 +130,26 @@ aside li:hover{
     height: 35px;
 }
 
+.ms_table-btn{
+    border: 1px solid grey;
+    width: 40px;
+}
+
+.ms_table-btn i{
+    color: var();
+}
 
 
 
 
 /* ----- area responsive ----- */
+
+@media screen and (max-width: 767px) {
+    .ms_d-none{
+        display: none;
+    }
+}
+
 
 @media screen and (max-width: 991px) {
     aside ul{
@@ -142,7 +170,14 @@ aside li:hover{
 
 
 @media screen and (min-width: 768px) {
-    
+    .ms_cta-side{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .ms_new-student{
+        order: 1;
+    }
 } 
 
 
@@ -178,13 +213,9 @@ aside li:hover{
         margin-right: 12px;
     } 
 
-    .ms_cta-side{
-        flex-direction: row;
-        justify-content: space-between;
+    .ms_piano{
+        font-size: 12px;
     }
 
-    .ms_new-student{
-        order: 1;
-    }
 
 } 

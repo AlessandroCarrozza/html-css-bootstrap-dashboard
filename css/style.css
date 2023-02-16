@@ -48,13 +48,13 @@ aside{
 }
 
 #ms_main-content{
-    /* debug */ background-color: gold;
+    
 }
 /* fine macroaree */
 
 
 table{
-   /* debug */ border: 2px solid black; 
+   /* debug */ border: 1px solid black; 
 }
 
 .ms_logo-mobile{
@@ -113,6 +113,10 @@ aside li:hover{
 
 .ms_plus button{
     border: 1px solid white;
+}
+
+.ms_faq{
+    border: 1px solid var(--lightgrey);
 }
 
 

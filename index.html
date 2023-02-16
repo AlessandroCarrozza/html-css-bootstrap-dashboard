@@ -119,10 +119,87 @@
         <div class="ms_content">
 
             <section id="ms_cta" class="container-fluid">
-                <div class="ms_cta-side d-flex">
-                    <div>testo</div>
-                    <div>testo</div>
-                    <div>Studenti online negli ultimi 30 minuti <br> <span class="d-block">125</span></div>
+                <div class="ms_cta-side d-flex py-2">
+                    <div class="ms_new-student text-white py-3">
+                          <span>Nuovo Studente</span>
+
+                          <div class="ms_plus d-inline-block px-2">
+                              <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus text-white"></i></button>
+
+                              <div class="offcanvas offcanvas-end text-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                  <form class="row g-3">
+                                    <div class="col-md-6">
+                                      <label for="inputEmail4" class="form-label">Email</label>
+                                      <input type="email" class="form-control" id="inputEmail4">
+                                    </div>
+                                    <div class="col-md-6">
+                                      <label for="inputPassword4" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="inputAddress" class="form-label">Address</label>
+                                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="inputAddress2" class="form-label">Address 2</label>
+                                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                    </div>
+                                    <div class="col-md-6">
+                                      <label for="inputCity" class="form-label">City</label>
+                                      <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="col-md-4">
+                                      <label for="inputState" class="form-label">State</label>
+                                      <select id="inputState" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                      <label for="inputZip" class="form-label">Zip</label>
+                                      <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                    <div class="col-12">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                          Check me out
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                      <button type="submit" class="btn btn-primary">Sign in</button>
+                                      <button type="reset" class="btn bg-warning">Svuota</button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                          </div>
+
+                    </div>
+
+
+                    <div class="text-white py-3">
+                        <div>
+                          <h3 class="d-inline-block">Boolean</h3>
+                          <div class="ms_piano d-inline-block">Piano blaze</div>
+                        </div>
+
+                        <div>
+                          <div class="ms_piano d-inline-block">3 app</div>
+                          <i class="fa-solid fa-angles-right text-white"></i>
+                          <div class="ms_piano d-inline-block d-lg-none">+</div>
+
+                          <div class="ms_piano d-inline-block d-none d-lg-inline-block">Boolean mobile app</div>
+                          <div class="ms_piano d-inline-block d-none d-lg-inline-block">Boolean web app</div>
+                          <div class="ms_piano d-inline-block d-none d-lg-inline-block">Boolean blog app</div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="ms_students text-white py-3">Studenti online negli ultimi 30 minuti <span class="d-block fs-4">125</span></div>
                 </div>
             </section>
 

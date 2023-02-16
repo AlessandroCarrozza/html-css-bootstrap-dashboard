@@ -12,6 +12,7 @@ a{
 :root{
     --lightgrey: #e9ecef;
     --aside-bg-color: #051e34;
+    --cta-bg-color: #1b72e8;
 }
 
 
@@ -43,7 +44,7 @@ aside{
 }
 
 #ms_cta{
-    /* debug */ background-color: aqua;
+    background-color: var(--cta-bg-color);
 }
 
 #ms_main-content{
@@ -87,6 +88,10 @@ aside ul{
     align-items: center;
 }
 
+aside li:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
 .ms_cta-side{
     flex-direction: column;
 }
@@ -98,6 +103,20 @@ aside ul{
 .ms_bell i{
     color: orange;
 }
+
+.ms_piano{
+    padding: 2px 10px;
+    border-radius: 30px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.ms_plus button{
+    border: 1px solid white;
+}
+
+
+
 
 
 
@@ -112,6 +131,10 @@ aside ul{
     aside li{
         text-align: center;
         padding: 10px 0;
+    }
+
+    .ms_bell{
+        margin-left: 20px;
     }
 }
     
@@ -148,10 +171,6 @@ aside ul{
         padding: 10px 5px;
     }
 
-    aside li:hover{
-        background-color: rgba(255, 255, 255, 0.6);
-    }
-
     aside i{
         font-size: 22px;
         width: 25px;
@@ -162,6 +181,10 @@ aside ul{
     .ms_cta-side{
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .ms_new-student{
+        order: 1;
     }
 
 } 

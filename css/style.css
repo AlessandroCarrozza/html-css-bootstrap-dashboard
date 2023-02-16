@@ -16,7 +16,6 @@ a{
     --cta-bg-color: #1b72e8;
 }
 
-
 /* ----- codice ----- */
 
 /* inizio macroaree */
@@ -49,6 +48,7 @@ aside{
 
 /* fine macroaree */
 
+/*---- inizio header ----*/
 .ms_logo-mobile{
     height: 60px;
 }
@@ -65,6 +65,18 @@ aside{
     width: 50px;
 }
 
+.ms_bell i{
+    color: orange;
+}
+.ms_bar{
+    background-color: var(--lightgrey);
+}
+/* ----- fine header ----- */
+
+
+/* ------ inizio main ------*/
+
+/* inizio aside */
 aside i{
     font-size: 22px;
 } 
@@ -80,20 +92,20 @@ aside ul{
     align-items: center;
 }
 
+#ms_aside-bottom span{
+    position: relative;
+    bottom: 3px;
+}
+
 aside li:hover{
     background-color: rgba(255, 255, 255, 0.6);
 }
+/* fine aside */
 
+
+/* inizio cta */
 .ms_cta-side{
     flex-direction: column;
-}
-
-.ms_bar{
-    background-color: var(--lightgrey);
-}
-
-.ms_bell i{
-    color: orange;
 }
 
 .ms_piano{
@@ -119,24 +131,6 @@ aside li:hover{
     color: black;
 }
 
-.ms_faq{
-    border: 1px solid var(--lightgrey);
-}
-
-
-.ms_red-circle{
-    height: 35px;
-}
-
-.ms_table-btn{
-    border: 1px solid grey;
-    width: 40px;
-}
-
-.ms_table-btn i{
-    color: var();
-}
-
 .ms_offcanvas .btn{
     border-radius: 10px;
 }
@@ -149,10 +143,46 @@ aside li:hover{
     color: black;
 }
 
+.ms_offcanvas{
+    width: 100%;
+}
+/* fine cta */
 
-/* ----- area responsive ----- */
+/* inizio content principale */
+.ms_red-circle{
+    height: 35px;
+}
+
+.ms_table-btn{
+    border: 1px solid grey;
+    width: 40px;
+}
+
+.ms_td-space{
+    width: 120px;
+}
+
+#ms_todo input[type=checkbox]{
+    margin-top: 5px;
+}
+
+#ms_next-classes, #ms_faq, #ms_todo, #ms_stats{
+    border: 2px solid var(--lightgrey);
+}
+
+#ms_next-classes .ms_table-row:hover{
+    background-color: var(--lightgrey);
+}
+/* fine content principale */
+
+/* ----- fine main ------ */
+
+
+
+/* --------- RESPONSIVE -------- */
 
 @media screen and (max-width: 767px) {
+    /* elementi di table principale */
     .ms_d-none{
         display: none;
     }
@@ -160,6 +190,11 @@ aside li:hover{
 
 
 @media screen and (max-width: 991px) {
+
+    .ms_bell{
+        margin-left: 20px;
+    }
+
     aside ul{
         padding: 0;
         width: 100%;
@@ -169,15 +204,12 @@ aside li:hover{
         text-align: center;
         padding: 10px 0;
     }
-
-    .ms_bell{
-        margin-left: 20px;
-    }
 }
     
 
 
 @media screen and (min-width: 768px) {
+
     .ms_cta-side{
         flex-direction: row;
         justify-content: space-between;
@@ -187,22 +219,15 @@ aside li:hover{
         order: 1;
     }
 
-    .ms_offcanvas{
-        width: 600px;
-    }
-
 } 
 
 
 @media screen and (min-width: 992px) {
+
     .ms_sidebar{
         width: 150px;
     }
 
-    .ms_content{
-        width: calc(100% - 150px);
-    }
-    
     .ms_list-icons{
         width: 150px;
     }
@@ -210,6 +235,11 @@ aside li:hover{
     .ms_navbar{
         min-width: calc(100% - 150px);
     }
+
+    .ms_content{
+        width: calc(100% - 150px);
+    }
+    
 
     aside ul{
         padding-left: 1.7rem;
@@ -230,5 +260,7 @@ aside li:hover{
         font-size: 12px;
     }
 
-
+    .ms_offcanvas{
+        width: 700px;
+    }
 } 

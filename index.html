@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -34,6 +37,7 @@
                   </nav>
                 </div>
 
+
                 <ul class="ms_list-icons d-flex m-0 p-0 justify-content-between align-items-center">
                     <li class="d-none d-lg-inline-block">
                       <a href="#"><i class="fa-solid fa-list text-dark"></i></a>
@@ -57,7 +61,6 @@
                         </ul>
                       </div>
                     </li>
-
                 </ul>
             </div>
         </nav>
@@ -73,8 +76,7 @@
         <!-- inizio sidebar -->
         <aside class="ms_sidebar d-flex flex-column justify-content-between py-3">
 
-            <section id="ms_aside-top">
-              
+            <section id="ms_aside-top">             
                 <ul>
                   <li>
                     <a href="#" class="text-white">
@@ -95,13 +97,11 @@
                     </a>
                   </li>
                 </ul>
-
             </section>
 
 
 
-            <section id="ms_aside-bottom">
-                
+            <section id="ms_aside-bottom">           
                 <ul>
                   <li>
                     <a href="#" class="text-white">
@@ -110,7 +110,6 @@
                     </a>
                   </li>
                 </ul>
-
             </section>
 
         </aside>
@@ -124,6 +123,7 @@
           <!-- inizio call to action -->
             <section id="ms_cta" class="container-fluid">
                 <div class="ms_cta-side d-flex py-2">
+
                     <div class="ms_new-student text-white py-3">
                           <span>Nuovo Studente</span>
 
@@ -136,6 +136,7 @@
                                 
                                 <div class="offcanvas-header">
                                   <h5>Inserisci un nuovo studente</h5>     
+                                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
 
                                 <div class="offcanvas-body">
@@ -217,7 +218,6 @@
 
                               
                           </div>
-
                     </div>
 
 
@@ -243,6 +243,7 @@
                     <div class="ms_students text-white py-3">Studenti online negli ultimi 30 minuti 
                       <span class="d-block fs-4">125</span>
                     </div>
+
                 </div>
             </section>
             <!-- fine call to action -->
@@ -251,12 +252,12 @@
 
             <section id="ms_main-content" class="container-fluid">
 
-
                 <div class="row">
+
                     <div class="col-12 col-md-12 col-lg-8">
                         <div class="row">
                             <div class="col-12 col-md-12">
-                              <div class="card w-100 my-3" style="width: 18rem;">
+                              <div id="ms_next-classes" class="card w-100 my-3" style="width: 18rem;">
                                 <div class="card-header fs-3">
                                   Prossime classi
                                 </div>
@@ -264,17 +265,16 @@
                                   <li class="list-group-item">
 
                                     <table class="ms_table-class table">
-                                      <thead">
-                                        <tr>
-                                          <th scope="col">Nome</th>
-                                          <th scope="col" class="text-center ms_d-none">Data inizio</th>
-                                          <th scope="col" class="text-center ms_d-none">ROI</th>
-                                          <th scope="col" class="text-center">Stato</th>
-                                          <th scope="col" class="text-center">Azioni</th>
-                                        </tr>
-                                      </thead>
+    
                                       <tbody>
                                         <tr>
+                                          <td>Nome</td>
+                                          <td class="ms_td-space text-center ms_d-none">Data inizio</td>
+                                          <td class="ms_td-space text-center ms_d-none">ROI</td>
+                                          <td class="ms_td-space text-center">Stato</td>
+                                          <td class="ms_td-space text-center">Azioni</td>
+                                        </tr>
+                                        <tr class="ms_table-row">
                                           <td>
                                             <img src="img/class-avatar.jpg" class="ms_red-circle pe-2" alt="Red Circle">
                                             Classe 87
@@ -289,12 +289,12 @@
                                             </div>
                                           </td>
                                         </tr>
-                                        <tr>
+                                        <tr class="ms_table-row">
                                           <td>
                                             <img src="img/class-avatar.jpg" class="ms_red-circle pe-2" alt="Red Circle">
                                             Classe 87
                                           </td>
-                                          <td class="text-center ms_d-none">15 Feb 2023</td>
+                                          <td class="text-center ms_d-none">16 Feb 2023</td>
                                           <td class="text-center ms_d-none">20%</td>
                                           <td class="text-center"><span class="badge rounded-pill bg-success pb-2">Done</span></td>
                                           <td class="text-center">
@@ -304,12 +304,12 @@
                                             </div>
                                           </td>
                                         </tr>
-                                        <tr>
+                                        <tr class="ms_table-row">
                                           <td>
                                             <img src="img/class-avatar.jpg" class="ms_red-circle pe-2" alt="Red Circle">
                                             Classe 87
                                           </td>
-                                          <td class="text-center ms_d-none">15 Feb 2023</td>
+                                          <td class="text-center ms_d-none">17 Feb 2023</td>
                                           <td class="text-center ms_d-none">20%</td>
                                           <td class="text-center"><span class="badge rounded-pill bg-warning pb-2">process</span></td>
                                           <td class="text-center">
@@ -319,12 +319,12 @@
                                             </div>
                                           </td>
                                         </tr>
-                                        <tr>
+                                        <tr class="ms_table-row">
                                           <td>
                                             <img src="img/class-avatar.jpg" class="ms_red-circle pe-2" alt="Red Circle">
                                             Classe 87
                                           </td>
-                                          <td class="text-center ms_d-none">15 Feb 2023</td>
+                                          <td class="text-center ms_d-none">18 Feb 2023</td>
                                           <td class="text-center ms_d-none">20%</td>
                                           <td class="text-center"><span class="badge rounded-pill bg-success pb-2">Done</span></td>
                                           <td class="text-center">
@@ -334,12 +334,12 @@
                                             </div>
                                           </td>
                                         </tr>
-                                        <tr>
+                                        <tr class="ms_table-row">
                                           <td>
                                             <img src="img/class-avatar.jpg" class="ms_red-circle pe-2" alt="Red Circle">
                                             Classe 87
                                           </td>
-                                          <td class="text-center ms_d-none">15 Feb 2023</td>
+                                          <td class="text-center ms_d-none">19 Feb 2023</td>
                                           <td class="text-center ms_d-none">20%</td>
                                           <td class="text-center"><span class="badge rounded-pill bg-danger pb-2">failed</span></td>
                                           <td class="text-center">
@@ -349,12 +349,12 @@
                                             </div>
                                           </td>
                                         </tr>
-                                        <tr>
+                                        <tr class="ms_table-row">
                                           <td>
                                             <img src="img/class-avatar.jpg" class="ms_red-circle pe-2" alt="Red Circle">
                                             Classe 87
                                           </td>
-                                          <td class="text-center ms_d-none">15 Feb 2023</td>
+                                          <td class="text-center ms_d-none">20 Feb 2023</td>
                                           <td class="text-center ms_d-none">20%</td>
                                           <td class="text-center"><span class="badge rounded-pill bg-success pb-2">Done</span></td>
                                           <td class="text-center">
@@ -364,12 +364,12 @@
                                             </div>
                                           </td>
                                         </tr>
-                                        <tr>
+                                        <tr class="ms_table-row">
                                           <td>
                                             <img src="img/class-avatar.jpg" class="ms_red-circle pe-2" alt="Red Circle">
                                             Classe 87
                                           </td>
-                                          <td class="text-center ms_d-none">15 Feb 2023</td>
+                                          <td class="text-center ms_d-none">21 Feb 2023</td>
                                           <td class="text-center ms_d-none">20%</td>
                                           <td class="text-center"><span class="badge rounded-pill bg-danger pb-2">failed</span></td>
                                           <td class="text-center">
@@ -379,12 +379,12 @@
                                             </div>
                                           </td>
                                         </tr>
-                                        <tr>
+                                        <tr class="ms_table-row">
                                           <td>
                                             <img src="img/class-avatar.jpg" class="ms_red-circle pe-2" alt="Red Circle">
                                             Classe 87
                                           </td>
-                                          <td class="text-center ms_d-none">15 Feb 2023</td>
+                                          <td class="text-center ms_d-none">22 Feb 2023</td>
                                           <td class="text-center ms_d-none">20%</td>
                                           <td class="text-center"><span class="badge rounded-pill bg-success pb-2">Done</span></td>
                                           <td class="text-center">
@@ -403,11 +403,10 @@
                                 </ul>
                               </div>
                             </div>
-
-                            
+                  
                             <div class="col-12 col-md-12 pb-4">
-                              <div class="ms_faq card w-100" style="width: 18rem;">
-                                <div class="card w-100 text-dark" style="width: 18rem;">
+                              <div id="ms_faq" class="card w-100" style="width: 18rem;">
+                                <div class="card w-100 text-dark border-0" style="width: 18rem;">
                                   <div class="card-header fs-3">
                                     F.A.Q.
                                   </div>
@@ -453,11 +452,11 @@
                         </div>
                     </div>
 
+
                     <div class="col-12 col-md-12 col-lg-4">
                         <div class="row">
                             <div class="col-12 col-md-12">
-
-                              <div class="card w-100 my-3" style="width: 18rem;">
+                              <div id="ms_todo" class="card w-100 my-3" style="width: 18rem;">
                                 <div class="card-header fs-3">
                                   Todo
                                 </div>
@@ -465,9 +464,9 @@
                                   <li class="list-group-item">
                                     <div class="card w-100" style="width: 18rem;">
                                       <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><input type="checkbox" name="name" class="me-1"> Kickoff nuove classi</li>
-                                        <li class="list-group-item"><input type="checkbox" name="name" class="me-1"> Lezione su Bootstrap 5 in classe #87</li>
-                                        <li class="list-group-item"><input type="checkbox" name="name" class="me-1"> Controllare username github studenti</li>
+                                        <li class="list-group-item"><input type="checkbox" name="name" class="form-check-input me-1"> Kickoff nuove classi</li>
+                                        <li class="list-group-item"><input type="checkbox" name="name" class="form-check-input me-1"> Lezione su Bootstrap 5 in classe #87</li>
+                                        <li class="list-group-item"><input type="checkbox" name="name" class="form-check-input me-1"> Controllare username github studenti</li>
                                       </ul>
                                     </div>
                                   </li>
@@ -475,9 +474,8 @@
                               </div>                                
                             </div>
 
-
                             <div class="col-12 col-md-12">
-                              <div class="card w-100 py-2" style="width: 18rem;">
+                              <div id="ms_stats" class="card w-100 py-2" style="width: 18rem;">
                                 <ul class="list-group list-group-flush">
                                   <li class="list-group-item">
                                     <div class="card w-100" style="width: 18rem;">

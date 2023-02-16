@@ -11,6 +11,7 @@ a{
 
 :root{
     --lightgrey: #e9ecef;
+    --aside-bg-color: #051e34;
 }
 
 
@@ -25,13 +26,15 @@ main{
     height: calc(100vh - 80px);
 }
 
-.ms_sidebar{
+aside{
     height: 100%;
     width: 80px;
-    background-color: blue;
+    background-color: var(--aside-bg-color);
     background-image: url("../img/sidebar-bg.png");
     background-size: cover;
 }
+
+
 
 .ms_content{
     height: 100%;
@@ -79,7 +82,7 @@ aside ul{
     flex-direction: column;
 }
 
-#aside-top{
+#aside-top, #aside-bottom{
     display: flex;
     align-items: center;
 }
@@ -100,7 +103,7 @@ aside ul{
 
 /* ----- area responsive ----- */
 
-@media screen and (min-width: 576px) and (max-width: 991px) {
+@media screen and (max-width: 991px) {
     aside ul{
         padding: 0;
         width: 100%;
@@ -136,17 +139,24 @@ aside ul{
         min-width: calc(100% - 150px);
     }
 
+    aside ul{
+        padding-left: 1.7rem;
+    }
+
     aside li{
         display: flex;
-        align-items: center;
-        padding: 10px 0;
+        padding: 10px 5px;
+    }
+
+    aside li:hover{
+        background-color: rgba(255, 255, 255, 0.6);
     }
 
     aside i{
         font-size: 22px;
         width: 25px;
         height: 25px;
-        margin-right: 15px;
+        margin-right: 12px;
     } 
 
     .ms_cta-side{

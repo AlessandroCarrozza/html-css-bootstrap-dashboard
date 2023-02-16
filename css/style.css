@@ -35,8 +35,6 @@ aside{
     background-size: cover;
 }
 
-
-
 .ms_content{
     height: 100%;
     width: calc(100% - 80px);
@@ -51,11 +49,6 @@ aside{
     
 }
 /* fine macroaree */
-
-
-table{
-   /* debug */ border: 1px solid black; 
-}
 
 .ms_logo-mobile{
     height: 60px;
@@ -83,7 +76,7 @@ aside ul{
     flex-direction: column;
 }
 
-#aside-top, #aside-bottom{
+#ms_aside-top, #ms_aside-bottom{
     display: flex;
     align-items: center;
 }
@@ -178,7 +171,6 @@ aside li:hover{
     aside i{
         font-size: 22px;
         width: 25px;
-        height: 25px;
         margin-right: 12px;
     } 
 

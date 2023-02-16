@@ -10,10 +10,8 @@ a{
 }
 
 :root{
-    --lightgrey: lightgrey;
+    --lightgrey: #e9ecef;
 }
-
-
 
 
 /* ----- codice ----- */
@@ -90,7 +88,13 @@ aside ul{
     flex-direction: column;
 }
 
+.ms_bar{
+    background-color: var(--lightgrey);
+}
 
+.ms_bell i{
+    color: orange;
+}
 
 
 
@@ -125,11 +129,11 @@ aside ul{
     }
     
     .ms_list-icons{
-        width: 200px;
+        width: 150px;
     }
 
     .ms_navbar{
-        min-width: calc(100% - 200px);
+        min-width: calc(100% - 150px);
     }
 
     aside li{
@@ -140,8 +144,9 @@ aside ul{
 
     aside i{
         font-size: 22px;
-        width: 22px;
-        margin-right: 20px;
+        width: 25px;
+        height: 25px;
+        margin-right: 15px;
     } 
 
     .ms_cta-side{

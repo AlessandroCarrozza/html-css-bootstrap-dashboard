@@ -25,18 +25,37 @@
                   <nav class="navbar bg-body-tertiary">
                     <form class="container-fluid px-4">
                       <div class="input-group">
-                        <span class="input-group-text" id="basic-addon1">@</span>
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        <span class="input-group-text border-0" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="ms_bar form-control border-0 ps-0" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
                       </div>
                     </form>
                   </nav>
                 </div>
 
-                <ul class="ms_list-icons d-flex m-0 p-0 justify-content-between">
-                    <li class="d-none d-lg-inline-block">testo</li>
-                    <li class="d-none d-lg-inline-block">testo</li>
-                    <li class="d-none d-lg-inline-block">testo</li>
-                    <li class="ms_bell">bell</li>
+                <ul class="ms_list-icons d-flex m-0 p-0 justify-content-between align-items-center">
+                    <li class="d-none d-lg-inline-block">
+                      <a href="#"><i class="fa-solid fa-list text-dark"></i></a>
+                    </li>
+                    <li class="d-none d-lg-inline-block">
+                      <a href="#"><i class="fa-solid fa-circle-question text-dark"></i></a>
+                    </li>
+                    <li class="d-none d-lg-inline-block">
+                      <a href="#"><i class="fa-solid fa-ellipsis-vertical text-dark"></i></a>
+                    </li>
+
+                    <li class="ms_bell">
+                      <div class="dropdown">
+                        <button class="btn p-0 m-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-bell"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Profilo</a></li>
+                          <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                          <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                      </div>
+                    </li>
+
                 </ul>
             </div>
         </nav>

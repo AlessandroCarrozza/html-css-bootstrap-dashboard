@@ -64,15 +64,26 @@ table{
 }
 
 .ms_navbar{
-    width: 85%;
-}
+    min-width: calc(100% - 50px);
+} 
 
 .ms_list-icons{
-    width: 12%;
+    width: 50px;
 }
 
 aside i{
     font-size: 22px;
+} 
+
+aside ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#aside-top{
+    display: flex;
+    align-items: center;
 }
 
 .ms_cta-side{
@@ -81,13 +92,22 @@ aside i{
 
 
 
+
+
 /* ----- area responsive ----- */
 
-@media screen and (min-width: 576px) and (max-width: 992) {
-    .ms_list-icons{
-        text-align: right;
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    aside ul{
+        padding: 0;
+        width: 100%;
+    }
+
+    aside li{
+        text-align: center;
+        padding: 10px 0;
     }
 }
+    
 
 
 @media screen and (min-width: 768px) {
@@ -103,22 +123,26 @@ aside i{
     .ms_content{
         width: calc(100% - 150px);
     }
-
-    .ms_navbar{
-        min-width: calc(100% - 200px);
-    }
     
     .ms_list-icons{
         width: 200px;
     }
 
-    aside a{
+    .ms_navbar{
+        min-width: calc(100% - 200px);
+    }
+
+    aside li{
         display: flex;
         align-items: center;
-        width: 100%;
-        justify-content: space-around;
-        padding: 0 1.5rem;
+        padding: 10px 0;
     }
+
+    aside i{
+        font-size: 22px;
+        width: 22px;
+        margin-right: 20px;
+    } 
 
     .ms_cta-side{
         flex-direction: row;

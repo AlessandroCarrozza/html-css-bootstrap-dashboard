@@ -46,9 +46,7 @@ aside{
     background-color: var(--cta-bg-color);
 }
 
-#ms_main-content{
-    
-}
+
 /* fine macroaree */
 
 .ms_logo-mobile{
@@ -139,7 +137,17 @@ aside li:hover{
     color: var();
 }
 
+.ms_offcanvas .btn{
+    border-radius: 10px;
+}
 
+.ms_offcanvas .ms_btn-blue:hover{
+    background-color: var(--cta-bg-color);
+}
+
+.ms_choose-file::placeholder{
+    color: black;
+}
 
 
 /* ----- area responsive ----- */
@@ -178,6 +186,11 @@ aside li:hover{
     .ms_new-student{
         order: 1;
     }
+
+    .ms_offcanvas{
+        width: 600px;
+    }
+
 } 
 
 

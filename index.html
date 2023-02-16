@@ -132,55 +132,90 @@
                                 <i class="fa-solid fa-plus"></i>
                               </button>
 
-                              <div class="offcanvas offcanvas-end text-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                              <div class="ms_offcanvas offcanvas offcanvas-end text-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                
                                 <div class="offcanvas-header">
+                                  <h5>Inserisci un nuovo studente</h5>     
+                                </div>
+
+                                <div class="offcanvas-body">
                                   <form class="row g-3">
                                     <div class="col-md-6">
-                                      <label for="inputEmail4" class="form-label">Email</label>
+                                      <label for="inputEmail4" class="form-label">Nome</label>
                                       <input type="email" class="form-control" id="inputEmail4">
+                                    </div>
+                                    <div class="col-md-6">
+                                      <label for="inputPassword4" class="form-label">Cognome</label>
+                                      <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                    <div class="col-md-6">
+                                      <label for="inputEmail4" class="form-label">Email</label>
+                                      <div class="input-group flex-nowrap">
+                                        <span class="input-group-text" id="addon-wrapping">@</span>
+                                        <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+                                      </div>
                                     </div>
                                     <div class="col-md-6">
                                       <label for="inputPassword4" class="form-label">Password</label>
                                       <input type="password" class="form-control" id="inputPassword4">
                                     </div>
-                                    <div class="col-12">
-                                      <label for="inputAddress" class="form-label">Address</label>
-                                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                    <div class="col-md-6 d-none d-xl-block">
+                                      <label for="inputEmail4" class="form-label">Indirizzo Email</label>
+                                      <div class="input-group flex-nowrap">
+                                        <span class="input-group-text" id="addon-wrapping">@</span>
+                                        <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6 d-none d-xl-block">
+                                      <label for="inputPassword4" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="inputPassword4">
                                     </div>
                                     <div class="col-12">
-                                      <label for="inputAddress2" class="form-label">Address 2</label>
-                                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                      <label for="inputAddress2" class="form-label">Indirizzo</label>
+                                      <input type="text" class="form-control" id="inputAddress2" >
                                     </div>
                                     <div class="col-md-6">
-                                      <label for="inputCity" class="form-label">City</label>
+                                      <label for="inputCity" class="form-label">Città</label>
                                       <input type="text" class="form-control" id="inputCity">
                                     </div>
                                     <div class="col-md-4">
-                                      <label for="inputState" class="form-label">State</label>
+                                      <label for="inputState" class="form-label">Stato</label>
                                       <select id="inputState" class="form-select">
-                                        <option selected>Choose...</option>
+                                        <option selected>Scegli...</option>
                                         <option>...</option>
                                       </select>
                                     </div>
                                     <div class="col-md-2">
-                                      <label for="inputZip" class="form-label">Zip</label>
+                                      <label for="inputZip" class="form-label">CAP</label>
                                       <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                          
+                                  
+                                    <div class="col-md-12">
+                                      <label for="photoFile" class="pb-2">Foto</label>
+                                      <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">Scegli file</span>
+                                        <input type="text" class="form-control ms_choose-file" placeholder="Nessun file selezionato" aria-label="Username" aria-describedby="basic-addon1">
+                                      </div>
                                     </div>
                                     <div class="col-12">
                                       <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="gridCheck">
                                         <label class="form-check-label" for="gridCheck">
-                                          Check me out
+                                          Seleziona per proseguire
                                         </label>
                                       </div>
                                     </div>
                                     <div class="col-12">
-                                      <button type="submit" class="btn btn-primary">Sign in</button>
-                                      <button type="reset" class="btn bg-warning">Svuota</button>
+                                      <button type="submit" class="btn ms_btn-blue btn-primary">Salva</button>
+                                      <button type="reset" class="btn ms_btn-orange bg-warning">Svuota</button>
                                     </div>
                                   </form>
                                 </div>
+                                
                               </div>
+
+                              
                           </div>
 
                     </div>
@@ -215,6 +250,8 @@
 
 
             <section id="ms_main-content" class="container-fluid">
+
+
                 <div class="row">
                     <div class="col-12 col-md-12 col-lg-8">
                         <div class="row">
@@ -413,7 +450,6 @@
                                 </div>
                               </div>
                             </div>
-
                         </div>
                     </div>
 
@@ -438,7 +474,6 @@
                                 </ul>
                               </div>                                
                             </div>
-
 
 
                             <div class="col-12 col-md-12">
